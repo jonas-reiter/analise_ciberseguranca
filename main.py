@@ -61,7 +61,7 @@ st.dataframe(df_tabela, hide_index=1, use_container_width=True,
              )
 df_agrupado_ano = pd.DataFrame(df.groupby(['Ano']).sum('Total'))
 
-tipos_ataque = list(df.columns[3:])
+tipos_ataque = list(df.columns[3:-1])
 tipos_ataque_dict = {}
 
 colunas = st.columns(len(tipos_ataque))
